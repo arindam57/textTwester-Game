@@ -54,3 +54,12 @@ var generateWordSequence = function (givenWord) {
 	};
 	return irregularSequenceWord.sort().join('');
 };
+
+var countScr = 0;
+
+var generateRandomWord = function () {
+	var randomNumber = generateRandomNumber(wordLib.length);
+	var getWord = wordLib[randomNumber];
+	currentWord=wordLib[randomNumber];
+	document.getElementById('init').innerHTML = generateRandomSequence(getWord);
+}
