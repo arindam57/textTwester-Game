@@ -13,7 +13,8 @@ this folder will contain the files :-
 	
 	1) Html :-
 
-		a) pageSetup.html
+		a) start.html
+		b) pageSetup.html
 
 	2) Css :-
 
