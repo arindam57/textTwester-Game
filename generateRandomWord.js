@@ -34,3 +34,10 @@ var wordLib = ['laptop','serial','action','window','assert','finder',
 						'monkey','campus','brunch','offcut','snooze','bypath',
 						'undock','bytalk','bummer','bumper','physic','common'];
 
+var generateRandomNumber = function (highestNumber) {
+	var number = Math.random() * (highestNumber - 0) + 0;
+	if (number<1) 
+		return Math.floor(number);
+	else
+		return Math.round(number);
+}
