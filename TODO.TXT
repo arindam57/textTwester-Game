@@ -1,0 +1,26 @@
+** I am going to write a game called 'TextTwester'.
+---------------------------------------------------
+
+its code will be based on the following :-
+	
+	1) Html
+	2) JavaScript
+	3) CSS
+
+---------------------------------------------------
+
+this folder will contain the files :-
+	
+	1) Html :-
+
+		a) pageSetup.html
+
+	2) Css :-
+
+		a) pageStyle.css
+
+	3) javaScript :-
+
+		a) generateRandomWord.js
+
+----------------------------------------------------
