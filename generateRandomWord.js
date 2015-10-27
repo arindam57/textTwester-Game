@@ -55,7 +55,7 @@ var generateWordSequence = function (givenWord) {
 	return irregularSequenceWord.sort().join('');
 };
 
-var countScr = 0;
+var countScore = 0;
 
 var generateRandomWord = function () {
 	var randomNumber = generateRandomNumber(wordLib.length);
@@ -63,6 +63,16 @@ var generateRandomWord = function () {
 	currentWord=wordLib[randomNumber];
 	document.getElementById('init').innerHTML = generateRandomSequence(getWord);
 };
+
+function doOperationOnCheck (a) {
+	if (a==currentWord) {
+		countScore+=10;
+		document.getElementById('demo').innerHTML = countScore;
+		generateRandomWord();
+	}
+	else
+		alert(currentWord+" your score is "+countScore);
+}
 
 function checkOutput () {
 	var obtainedText = document.getElementById('text').value;
