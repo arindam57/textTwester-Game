@@ -62,4 +62,9 @@ var generateRandomWord = function () {
 	var getWord = wordLib[randomNumber];
 	currentWord=wordLib[randomNumber];
 	document.getElementById('init').innerHTML = generateRandomSequence(getWord);
-}
+};
+
+function checkOutput () {
+	var obtainedText = document.getElementById('text').value;
+	doOperationOnCheck(obtainedText); 
+};
