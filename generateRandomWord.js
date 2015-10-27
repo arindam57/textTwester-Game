@@ -40,4 +40,17 @@ var generateRandomNumber = function (highestNumber) {
 		return Math.floor(number);
 	else
 		return Math.round(number);
-}
+};
+
+var generateWordSequence = function (givenWord) {
+	var splitWord = givenWord.split('')
+	var irregularSequenceWord = [],count=0;
+
+	while(count != splitWord.length) {
+		irregularSequenceWord.push(splitWord[count]);
+		count++;
+		irregularSequenceWord.unshift(splitWord[count])
+		count++;
+	};
+	return irregularSequenceWord.sort().join('');
+};
