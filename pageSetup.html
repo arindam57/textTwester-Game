@@ -5,32 +5,32 @@
 	<link rel="stylesheet" type="text/css" href="pageStyle.css">
 	<script src="generateRandomWord.js" ></script>
 </head>
-<body>
+<body background='bgd1.jpg'>
 	<center><h1>!!! Welcome To TextTwester Game !!!</h1></center>
 
 	<center><table>
 		<tr>
-			<td>Scores</td>
+			<td class="a"><b>Your Score = </b></td>
 			<td>
 				<p id="printScore">0000</p>
 			</td>
 			<br>
 		</tr>
 	</table></center>
-
+	<br>
 	<center><input id="text" type="text"></center>
-
+	<br>
 	<center><button type="button" onclick="checkOutput()">Submit</button></center>
 
 	<center><table>
 		<tr>
 			<td>
-				<p id="printWord">HavFunn</p>
+				<p id="printWord">HavFun</p>
 			</td>
 			<br>
 		</tr>
 	</table></center>
-	
+	<br>
 	<center><button type="button" onclick="generateRandomWord()">Next</button></center>
 </body>
 </html>

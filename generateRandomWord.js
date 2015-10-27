@@ -61,17 +61,19 @@ var generateRandomWord = function () {
 	var randomNumber = generateRandomNumber(wordLib.length);
 	var getWord = wordLib[randomNumber];
 	currentWord=wordLib[randomNumber];
-	document.getElementById('init').innerHTML = generateRandomSequence(getWord);
+	document.getElementById('printWord').innerHTML = generateWordSequence(getWord);
 };
 
-function doOperationOnCheck (a) {
-	if (a==currentWord) {
+function doOperationOnCheck (obtainedText) {
+	if (obtainedText==currentWord) {
 		countScore+=10;
-		document.getElementById('demo').innerHTML = countScore;
+		document.getElementById('printScore').innerHTML = countScore;
 		generateRandomWord();
 	}
-	else
+	else{
 		alert(currentWord+" your score is "+countScore);
+		window.open("file:///Users/arindam/htmlFiles/textTwester-Game/start.html")
+	}
 }
 
 function checkOutput () {
