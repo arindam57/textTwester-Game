@@ -73,9 +73,7 @@ function doOperationOnCheck (obtainedText) {
 	}
 	else{
 		alert("The Word was "+currentWord+".\nyour score is "+countScore);
-		alert('hi2')
 		window.location = "start.html";
-		alert('hi');
 	}
 }
 
