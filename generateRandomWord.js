@@ -62,6 +62,7 @@ var generateRandomWord = function () {
 	var getWord = wordLib[randomNumber];
 	currentWord=wordLib[randomNumber];
 	document.getElementById('printWord').innerHTML = generateWordSequence(getWord);
+	document.getElementById('text').value = '';
 };
 
 function doOperationOnCheck (obtainedText) {
@@ -72,7 +73,9 @@ function doOperationOnCheck (obtainedText) {
 	}
 	else{
 		alert("The Word was "+currentWord+".\nyour score is "+countScore);
-		window.open("file:///Users/arindam/htmlFiles/textTwester-Game/start.html")
+		alert('hi2')
+		window.location = "start.html";
+		alert('hi');
 	}
 }
 
